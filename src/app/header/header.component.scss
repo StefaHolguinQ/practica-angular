@@ -1,5 +1,23 @@
 header{
     .container{
         padding: 1.3rem 1rem;
+        .btn-access{
+            font-weight: bold;
+            background: color(secondary, dark);
+            border: none;
+            border-radius: initial;
+            font-size: 1.2rem;
+        }
+        .hamburguer{
+            .icon-icon-hamburguer{
+                &::before{
+                    content: "\e905";
+                    font-family: iconFont;
+                    font-size: 2rem;
+                    width: 2rem;
+                    height: 1.5rem;
+                }
+            }
+        }
     }
 }

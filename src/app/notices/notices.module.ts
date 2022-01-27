@@ -6,7 +6,7 @@ import { NoticesComponent } from './notices.component';
 
 @NgModule({
   declarations: [
-    NoticesComponent
+    /*NoticesComponent*/
   ],
   imports: [
     CommonModule
