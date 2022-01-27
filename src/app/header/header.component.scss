@@ -1,21 +1,44 @@
-header{
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
+.header{
     .container{
         padding: 1.3rem 1rem;
-        .btn-access{
-            font-weight: bold;
-            background: color(secondary, dark);
-            border: none;
-            border-radius: initial;
-            font-size: 1.2rem;
+        .btn{
+            &.btn-primary{
+                font-weight: bold;
+                background: color(secondary, dark);
+                border: none;
+                border-radius: initial;
+                font-size: 1.2rem;
+            }
         }
         .hamburguer{
+            border: none;
+            background: initial;
             .icon-icon-hamburguer{
                 &::before{
                     content: "\e905";
+                    color: color(primary, base);
                     font-family: iconFont;
                     font-size: 2rem;
                     width: 2rem;
                     height: 1.5rem;
+                }
+            }
+        }
+        .search{
+            border: none;
+            background: initial;
+            .icon-icon-search{
+                &::before{
+                    content: "\e90c";
+                    color: color(primary, base);
+                    font-family: iconFont;
+                    font-size: 2rem;
+                    width: 2rem;
+                    height: 2rem;
                 }
             }
         }
