@@ -7,6 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  datosMenu=[
+    {
+      'titulo':'HOME',
+      'url':'#'
+    },
+    {
+      'titulo':'CATEGORÍAS',
+      'url':'#'
+    },
+    {
+      'titulo':'EVENTOS',
+      'url':'#'
+    },
+    {
+      'titulo':'EDICIONES',
+      'url':'#'
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

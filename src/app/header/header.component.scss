@@ -42,5 +42,42 @@
                 }
             }
         }
+        .container-menu{
+            display: none;
+        }
+        .logo-desktop{
+            display: none;
+        }
+    }
+}
+@include mq-min(lg){
+    .header{
+        .container{
+            .container-menu{
+                display: block;
+                .main-menu{
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 0;
+                        li{
+                            padding: 0.5rem 1.5rem 0rem;
+                            font-weight: normal;
+                            font-size: 1.2rem;
+                            color: color(primary, base);
+                        }
+                    }
+                }
+            }
+            .hamburguer{
+                display: none;
+            }
+            .logo-desktop{
+                display: block;
+            }
+            .logo-mobile{
+                display: none;
+            }
+        }
     }
 }

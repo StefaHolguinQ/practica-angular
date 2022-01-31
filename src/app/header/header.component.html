@@ -1,11 +1,23 @@
 <header class="header">
-    <div class="container d-flex fd-row jc-space-around">
+    <div class="container d-flex fd-row jc-space-between">
         <button class="hamburguer">
             <span class="icon-icon-hamburguer"></span>
         </button>
         <a href="" class="logo-mobile">
             <img src="../../../../assets/images/logos/Logo RI - Mobile.png" alt="Reportero Industrial" title="logo RI" height="30" width="97">
         </a>
+        <a href="" class="logo-desktop">
+            <img src="../../../../assets/images/logos/Logo RI.png" alt="Reportero Industrial" title="logo RI" height="" width="">
+        </a>
+        <div class="container-menu">
+            <nav class="main-menu">
+                <ul>
+                    <li *ngFor="let item of datosMenu">
+                        <a href="{{item.url}}" class="button text-link">{{item.titulo}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <button class="btn btn-primary btn-access">Acceder</button>
         <button class="search">
             <span class="icon-icon-search"></span>

@@ -1,8 +1,24 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
 .notices{
     .container{
         padding: 2.5rem 2rem;
         .desktop-notice{
             display: none;
+        }
+    }
+}
+@include mq-min(lg){
+    .notices{
+        .container{
+            .mobile-notice{
+                display: none;
+            }
+            .desktop-notice{
+                display: block;
+            }
         }
     }
 }

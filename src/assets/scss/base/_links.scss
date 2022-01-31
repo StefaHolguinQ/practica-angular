@@ -25,8 +25,10 @@ a, button {
       text-decoration: underline;
    }
    &.text-link {
+      color: color( primary, base );
       font-family: $font-primary;
-      font-size: $font-size;
+      font-size: map-get($sizes, "tiny");
+      text-decoration: none;
       text-transform: uppercase;
       border: none;
       font-weight: 700;
