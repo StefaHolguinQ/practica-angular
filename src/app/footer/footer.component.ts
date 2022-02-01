@@ -34,12 +34,12 @@ export class FooterComponent implements OnInit {
     },
     {
       'follow':'69K',
-      'icon': 'icon-icon-facebook',
+      'icon': 'icon-icon-linkedin2',
       'url': '#'
     },
     {
       'follow':'11K',
-      'icon': 'icon-icon-facebook',
+      'icon': 'icon-icon-youtube2',
       'url': '#'
     }
   ]
