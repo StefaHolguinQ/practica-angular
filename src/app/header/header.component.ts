@@ -30,5 +30,11 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  public openMenu: boolean = false;
+
+  showMenu(): void {
+    this.openMenu = !this.openMenu;
+  }
 
 }
