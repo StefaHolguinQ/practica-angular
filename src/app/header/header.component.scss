@@ -90,7 +90,9 @@
 }
 @include mq-min(lg){
     .header{
+        max-height: 6.8rem;
         .container{
+            max-height: 100%;
             .buttons-right{
                 .btn-access{
                     margin-right: 2.8rem;
