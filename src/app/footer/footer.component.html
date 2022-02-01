@@ -1,1 +1,38 @@
-<p>footer works!</p>
+<footer>
+    <div class="content-top">
+        <div class="info-footer">
+            <a href="" class="logo-desktop">
+                <img src="../../../../assets/images/logos/Logo RI.png" alt="Reportero Industrial" title="logo RI" height="" width="">
+            </a>
+            <p class="text-footer">
+                Reportero Industrial ofrece información direccionada a la transformación tecnológica y de los negocios 
+                en las industrias manufactureras de América Latina. Genera contenidos de gestión y estrategia, así como 
+                temas de desarrollos tecnológicos y novedades que marcan las tendencias de esta industria.
+            </p>
+        </div>
+        <div class="social-footer">
+            <div class="facebook">
+                <span class="icon-icon-facebook">20K</span>
+            </div>
+            <div class="linkedin">
+                <span class="icon-icon-linkedin2">69K</span>
+            </div>
+            <div class="you-tube">
+                <span class="icon-icon-youtube2">11K</span>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="content-bottom">
+        <div class="footer-links">
+            <nav class="footer-menu">
+                <ul>
+                    <li *ngFor="let item of datosFooter">
+                        <a href="{{item.url}}">{{item.title}}</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="copyright">© Copyright 2021 Axioma.</p>
+        </div>
+    </div>
+</footer>

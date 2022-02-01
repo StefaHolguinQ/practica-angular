@@ -7,6 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  datosFooter=[
+    {
+      'title':'CATEGORÍAS',
+      'url':'#'
+    },
+    {
+      'title':'EVENTOS',
+      'url':'#'
+    },
+    {
+      'title':'EDICIONES',
+      'url':'#'
+    },
+    {
+      'title':'SUSCRIPCIÓN',
+      'url':'#'
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
