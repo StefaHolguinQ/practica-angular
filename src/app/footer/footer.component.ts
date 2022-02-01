@@ -29,15 +29,18 @@ export class FooterComponent implements OnInit {
   socialFooter=[
     {
       'follow':'20K',
-      'icon': 'icon-icon-facebook'
+      'icon': 'icon-icon-facebook',
+      'url': '#'
     },
     {
       'follow':'69K',
-      'icon': 'icon-icon-facebook'
+      'icon': 'icon-icon-facebook',
+      'url': '#'
     },
     {
       'follow':'11K',
-      'icon': 'icon-icon-facebook'
+      'icon': 'icon-icon-facebook',
+      'url': '#'
     }
   ]
 

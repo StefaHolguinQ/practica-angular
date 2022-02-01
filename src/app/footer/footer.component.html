@@ -11,9 +11,14 @@
             </p>
         </div>
         <div class="social-footer">
-            <div class="info-social" *ngFor="let item of socialFooter">
-                <span class="{{item.icon}}">{{item.follow}}</span>
-            </div>
+            <h2>SÍGUENOS</h2>
+            <nav>
+                <ul>
+                    <li class="info-social" *ngFor="let item of socialFooter">
+                        <a href="{{item.url}}"><span class="{{item.icon}}"></span>{{item.follow}}</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
     <hr>
