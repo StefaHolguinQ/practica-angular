@@ -26,6 +26,21 @@ export class FooterComponent implements OnInit {
     }
   ]
 
+  socialFooter=[
+    {
+      'follow':'20K',
+      'icon': 'icon-icon-facebook'
+    },
+    {
+      'follow':'69K',
+      'icon': 'icon-icon-facebook'
+    },
+    {
+      'follow':'11K',
+      'icon': 'icon-icon-facebook'
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

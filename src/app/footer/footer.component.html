@@ -11,14 +11,8 @@
             </p>
         </div>
         <div class="social-footer">
-            <div class="facebook">
-                <span class="icon-icon-facebook">20K</span>
-            </div>
-            <div class="linkedin">
-                <span class="icon-icon-linkedin2">69K</span>
-            </div>
-            <div class="you-tube">
-                <span class="icon-icon-youtube2">11K</span>
+            <div class="info-social" *ngFor="let item of socialFooter">
+                <span class="{{item.icon}}">{{item.follow}}</span>
             </div>
         </div>
     </div>
