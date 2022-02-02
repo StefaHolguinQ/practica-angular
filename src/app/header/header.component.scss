@@ -8,7 +8,7 @@
     min-width: 33rem;
     margin: auto;
     .container{
-        padding: 1rem 0rem;
+        padding: 1.5rem 0rem;
         width: 100%;
         .btn{
             &.btn-primary{
@@ -20,14 +20,14 @@
             }
         }
         .logo{
-            margin-right: 3rem;
+            margin-right: 2.5rem;
         }
         .hamburguer{
             cursor: pointer;
             border: none;
             background: initial;
-            padding-top: 0.8rem;
-            padding-left: 1.7rem;
+            padding-top: 0.4rem;
+            padding-left: 0.6rem;
             .icon-icon-hamburguer{
                 &::before{
                     content: "\e905";
@@ -42,8 +42,8 @@
             .search{
                 border: none;
                 background: initial;
-                padding-right: 1.7rem;
-                padding-left: 2.4rem;
+                padding-right: 0.1rem;
+                padding-left: 3.7rem;
                 max-height: 3.2rem;
                 .icon-icon-search{
                     &::before{
