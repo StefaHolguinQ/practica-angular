@@ -5,6 +5,7 @@
 .header{
     max-height: 5.8rem;
     max-width: 110rem;
+    min-width: 33rem;
     margin: auto;
     .container{
         padding: 1rem 0rem;
@@ -101,13 +102,15 @@
         max-height: 6.8rem;
         .container{
             max-height: 100%;
+            padding: 2rem 0rem;
             .buttons-right{
                 .btn-access{
-                    margin-right: 2.2rem;
+                    margin-right: 2rem;
                 }
                 .search{
                     border-left: 0.15rem solid color(grayscale, gray-2);
-                    padding-left: 1.5rem;
+                    padding-left: 2.1rem;
+                    padding-right: 0.2rem;
                 }
             }
             .container-menu{
@@ -115,7 +118,7 @@
                 order: initial;
                 position: initial;
                 width: initial;
-                margin-right: 6.8rem;
+                margin-right: 9.8rem;
                 .main-menu{
                     margin-top: 0;
                     ul{
