@@ -3,10 +3,11 @@
 @import '../../assets/scss/config/extends';
 
 .header{
+    max-height: 5.8rem;
     max-width: 110rem;
     margin: auto;
     .container{
-        padding: 2rem 0rem;
+        padding: 1rem 0rem;
         width: 100%;
         .btn{
             &.btn-primary{
@@ -17,18 +18,21 @@
                 font-size: 1.2rem;
             }
         }
+        .logo{
+            margin-right: 3rem;
+        }
         .hamburguer{
             cursor: pointer;
             border: none;
             background: initial;
+            padding-top: 0.8rem;
+            padding-left: 1.7rem;
             .icon-icon-hamburguer{
                 &::before{
                     content: "\e905";
                     color: color(primary, base);
                     font-family: iconFont;
-                    font-size: 2rem;
-                    width: 2rem;
-                    height: 1.5rem;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -37,7 +41,8 @@
             .search{
                 border: none;
                 background: initial;
-                padding-left: 1.6rem;
+                padding-right: 1.7rem;
+                padding-left: 2.4rem;
                 max-height: 3.2rem;
                 .icon-icon-search{
                     &::before{
