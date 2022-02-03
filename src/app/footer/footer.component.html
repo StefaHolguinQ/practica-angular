@@ -1,37 +1,39 @@
 <footer>
-    <div class="content-top">
-        <div class="info-footer d-flex ai-center">
-            <a href="" class="logo-desktop">
-                <img src="../../../../assets/images/logos/Logo RI.png" alt="Reportero Industrial" title="logo RI" height="" width="">
-            </a>
-            <p class="text-footer">
-                Reportero Industrial ofrece información direccionada a la transformación tecnológica y de los negocios 
-                en las industrias manufactureras de América Latina. Genera contenidos de gestión y estrategia, así como 
-                temas de desarrollos tecnológicos y novedades que marcan las tendencias de esta industria.
-            </p>
+    <div class="container">
+        <div class="content-top">
+            <div class="info-footer d-flex ai-center">
+                <a href="" class="logo-desktop">
+                    <img src="../../../../assets/images/logos/Logo RI.png" alt="Reportero Industrial" title="logo RI" height="" width="">
+                </a>
+                <p class="text-footer">
+                    Reportero Industrial ofrece información direccionada a la transformación tecnológica y de los negocios 
+                    en las industrias manufactureras de América Latina. Genera contenidos de gestión y estrategia, así como 
+                    temas de desarrollos tecnológicos y novedades que marcan las tendencias de esta industria.
+                </p>
+            </div>
+            <div class="social-footer">
+                <h2>SÍGUENOS</h2>
+                <nav>
+                    <ul class="d-flex fd-row jc-space-evenly">
+                        <li class="info-social" *ngFor="let item of socialFooter">
+                            <a href="{{item.url}}"><span class="{{item.icon}}"></span>{{item.follow}}</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="social-footer">
-            <h2>SÍGUENOS</h2>
-            <nav>
-                <ul class="d-flex fd-row jc-space-evenly">
-                    <li class="info-social" *ngFor="let item of socialFooter">
-                        <a href="{{item.url}}"><span class="{{item.icon}}"></span>{{item.follow}}</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <hr>
-    <div class="content-bottom">
-        <div class="footer-links">
-            <nav class="footer-menu">
-                <ul class="d-flex jc-space-between">
-                    <li *ngFor="let item of datosFooter">
-                        <a href="{{item.url}}">{{item.title}}</a>
-                    </li>
-                </ul>
-            </nav>
-            <p class="copyright">© Copyright 2021 Axioma.</p>
+        <hr>
+        <div class="content-bottom">
+            <div class="footer-links">
+                <nav class="footer-menu">
+                    <ul class="d-flex jc-space-between">
+                        <li *ngFor="let item of datosFooter">
+                            <a href="{{item.url}}">{{item.title}}</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright">© Copyright 2021 Axioma.</p>
+            </div>
         </div>
     </div>
 </footer>

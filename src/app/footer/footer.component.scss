@@ -3,15 +3,24 @@
 @import '../../assets/scss/config/extends';
 
 footer{
-    position: fixed;
     bottom: 0;
     left: 0;
-    padding: 3.2rem 2.1rem;
+    position: fixed;
+    padding: 3.3rem 2.1rem;
+    max-width: 144rem;
+    min-height: 28.5rem;
+    margin: auto;
+    .container{
+        padding: 0;
+    }
     .content-top{
         .info-footer{
             flex-direction: column;
+            margin-bottom: 2.4rem;
+            margin-left: 0.4rem;
             .logo-desktop{
-                margin-bottom: 1.3rem;
+                margin-bottom: 2.3rem;
+                margin-right: 2.7rem;
             }
             .text-footer{
                 color: color(grayscale, gray-5);
@@ -27,12 +36,13 @@ footer{
                 font-weight: 500;
                 text-align: center;
                 font-size: map-get($sizes, tiny);
-                margin-bottom: 3.2rem;
+                margin-bottom: 3.3rem;
             }
             nav{
+                margin: 0 2.7rem;
                 ul{
                     padding-left: 0;
-                    margin-bottom: 2.4rem;
+                    margin-bottom: 2.6rem;
                     .info-social{
                         a{
                             text-decoration: none;
@@ -57,11 +67,12 @@ footer{
         }
     }
     .content-bottom{
+        margin-bottom: -0.2rem;
         .footer-links{
             .footer-menu{
                 ul{
                     margin-bottom: 0;
-                    padding: 1.2rem 0 3.1rem 0;
+                    padding: 1.2rem 0 2.9rem .3rem;
                     li{
                         font-size: map-get($sizes, tiny);
                         font-family: $font-primary;
@@ -79,6 +90,83 @@ footer{
                 font-size: map-get($sizes, tiny);
                 color: color(grayscale, gray-5);
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+@include mq-min(md){
+    footer{
+        // position: absolute;
+        // left: initial;
+        // width: 120rem;
+        width: 100%;
+        .content-top{
+            display: flex;
+            justify-content: flex-start;
+            min-width: 100%;
+            .info-footer{
+                max-width: 55.6rem;
+                margin-left: 4.5rem;
+                align-items: flex-start;
+                margin-bottom: 2rem;
+                .logo-desktop{
+                    margin-bottom: 2rem;
+                    margin-left: -0.3rem;
+                }
+            }
+            .social-footer{
+                min-width: 21rem;
+                // margin-left: 23.3rem;
+                margin-left: 11.3rem;
+                h2{
+                    text-align: left;
+                    margin-bottom: 3.2rem;
+                }
+                nav{
+                    margin: 0;
+                    ul{
+                        justify-content: space-between;
+                        .info-social{
+                            a{
+                                span{
+                                    padding-right: 0.6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-bottom{
+            margin-top: 2rem;
+            margin-top: 1.7rem;
+            .footer-links{
+                .copyright{
+                    text-align: left;
+                    margin-left: 4.5rem;
+                }
+                .footer-menu{
+                    ul{
+                        max-width: 320px;
+                        margin-left: 4.3rem;
+                        padding: 0rem 0 3.1rem 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mq-min(xxl){
+    footer{
+        max-width: 100%;
+        // padding: 3.3rem 9rem;
+        padding: 4.4rem 9rem;
+        .container{
+            padding: 0 3.8rem;
+        }
+        .content-top{
+            .social-footer{
+                margin-left: 23.3rem;
             }
         }
     }
