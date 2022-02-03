@@ -1,0 +1,58 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
+.sticky{
+    background: #002C42;
+    color: white;
+    max-height: 6.7rem;
+    min-width: 36rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    .container{
+        display: flex;
+        padding: 1.5rem 1.4rem;
+        .short-tag{
+            width: 35px;
+            height: 35px;
+            padding: 10px 9px;
+            font-size: 16px;
+            background: #E53212;
+        }
+        .info-tag{
+            padding-left: 0.8rem;
+            p{
+                &:first-child{
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 0;
+                }
+                &:last-child{
+                    font-size: 12px;
+                    margin-bottom: 0;
+                    color: rgba(255, 255, 255, 60%);
+                }
+            }
+        }
+        &::before{
+            content: '';
+            width: 1rem;
+            height: 1rem;
+            background: color(primary, base);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: relative;
+            top: 4.7rem;
+            left: 2.4rem;
+        }
+    }
+}
+@include mq-min(lg){
+    .sticky{
+        margin-top: 1rem;
+    }
+}

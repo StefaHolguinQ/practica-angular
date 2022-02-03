@@ -4,20 +4,17 @@
 
 .notices{
     .container{
-        padding: 2.5rem 2rem;
-        .desktop-notice{
-            display: none;
-        }
+        padding: 2.5rem 0;
+        margin-left: 0.4rem;
+        margin-top: 0.1rem;
     }
 }
 @include mq-min(lg){
     .notices{
         .container{
-            .mobile-notice{
-                display: none;
-            }
+            margin-left: 0;
+            padding-left: 2.4rem;
             .desktop-notice{
-                display: block;
                 height: auto;
                 margin-top: 0.9rem;
             }

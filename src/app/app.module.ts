@@ -7,6 +7,7 @@ import { NoticesComponent } from './notices/notices.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { StickyComponent } from './sticky/sticky.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     NoticesComponent,
     HeaderComponent,
     FooterComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    StickyComponent
   ],
   imports: [
     BrowserModule,
