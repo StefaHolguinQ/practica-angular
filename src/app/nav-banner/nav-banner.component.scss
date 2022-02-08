@@ -1,0 +1,37 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
+.nav-banner{
+    background-color: color(border, color-2);
+    display: flex;
+    align-items: center;
+    height: 5.3rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    overflow-x: auto;
+    overflow: -moz-scrollbars-none;
+    padding: 2.5rem 1rem;
+    width: 100%;
+    &::-webkit-scrollbar {
+        width: 0 !important
+    }
+    .links-banner{
+        min-width: fit-content;
+        font-size: 1rem;
+        padding: 0 0.5rem;
+        a{
+            color: color(complementary, five);
+            text-transform: uppercase;
+            font-weight: normal;
+            &:hover{
+                font-weight: 600;
+            }
+        }
+    }
+    h3{
+        font-size: map-get($sizes, "tiny");
+        padding-right: 0.5rem;
+    }
+}
