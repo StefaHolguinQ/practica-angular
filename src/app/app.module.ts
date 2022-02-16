@@ -10,6 +10,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { StickyComponent } from './sticky/sticky.component';
 import { BannerHomeComponent } from './banner-home/banner-home.component';
 import { NavBannerComponent } from './nav-banner/nav-banner.component';
+import { NoticeBannerComponent } from './notice-banner/notice-banner.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavBannerComponent } from './nav-banner/nav-banner.component';
     FooterComponent,
     BreadcrumbComponent,
     StickyComponent,
-    NavBannerComponent
+    NavBannerComponent,
+    NoticeBannerComponent
   ],
   imports: [
     BrowserModule,
