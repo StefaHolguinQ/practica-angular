@@ -1,0 +1,13 @@
+<div class="cards-sidebar" *ngFor="let item of infoCardSidebar">
+    <div class="cards-sidebar_image">
+        <img src="{{item.imageCard}}" alt="image-sidebar" width="80" height="80">
+    </div>
+    <div class="cards-sidebar_text">
+        <h3>{{item.title}}</h3>
+        <div class="name-autor">
+            <p>{{item.text1}}</p>
+            <p>{{item.text2}}</p>
+            <p>{{item.text3}}</p>
+        </div>
+    </div>
+</div>

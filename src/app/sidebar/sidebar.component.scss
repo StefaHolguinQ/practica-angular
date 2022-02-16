@@ -1,0 +1,23 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
+.sidebar{
+    padding: 1.6rem 2rem;
+    &_products,
+    &_articles{
+        h2{
+            margin-bottom: 2.4rem;
+        }
+    }
+    &_products{
+        h2{
+            margin-top: 0.8rem;
+        }
+    }
+    &_articles{
+        h2{
+            margin-top: 2.4rem;
+        }
+    }
+}

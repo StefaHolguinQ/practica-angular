@@ -11,18 +11,22 @@ import { StickyComponent } from './sticky/sticky.component';
 import { BannerHomeComponent } from './banner-home/banner-home.component';
 import { NavBannerComponent } from './nav-banner/nav-banner.component';
 import { NoticeBannerComponent } from './notice-banner/notice-banner.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { CardsSidebarComponent } from './cards-sidebar/cards-sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BannerHomeComponent,
+    CardsSidebarComponent,
     NoticesComponent,
     HeaderComponent,
     FooterComponent,
     BreadcrumbComponent,
     StickyComponent,
     NavBannerComponent,
-    NoticeBannerComponent
+    NoticeBannerComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

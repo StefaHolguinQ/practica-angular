@@ -1,0 +1,27 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
+.cards-sidebar{
+    display: flex;
+    &_text{
+        .name-autor{
+            display: flex;
+            min-height: 2rem;
+            padding-bottom: 1.6rem;
+            p{
+                height: 100%;
+                margin-bottom: 0;
+                &:nth-child(1){
+                    color: color(complementary, one);
+                }
+                &:nth-child(2){
+                    margin: 0 0.8rem;
+                }
+                &:nth-child(3){
+                    color: color(grayscale, gray-5);
+                }
+            }
+        }
+    }
+}
