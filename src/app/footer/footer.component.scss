@@ -3,6 +3,7 @@
 @import '../../assets/scss/config/extends';
 
 footer{
+    display: none;
     bottom: 0;
     left: 0;
     position: fixed;
@@ -46,6 +47,7 @@ footer{
                     margin-bottom: 2.6rem;
                     .info-social{
                         a{
+                            cursor: pointer;
                             text-decoration: none;
                             color: color(grayscale, gray-5);
                             font-size: map-get($sizes, tiny);
