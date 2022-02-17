@@ -155,12 +155,7 @@ footer{
 @include mq-min(xxl){
     footer{
         max-width: 100%;
-        // padding: 3.3rem 9rem;
         padding: 4.4rem 9rem;
-        .container{
-            padding: 0;
-            margin-left: 1.8rem;
-        }
         .content-top{
             .social-footer{
                 margin-left: 23.3rem;
