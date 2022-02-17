@@ -8,6 +8,8 @@
     &_text{
         margin-left: 1.4rem;
         h3{
+            color: color(grayscale, black);
+            cursor: pointer;
             font-weight: 600;
             font-size: 1.4rem;
             line-height: 2.1rem;
@@ -31,6 +33,30 @@
                 &:nth-child(3){
                     color: color(grayscale, gray-5);
                 }
+            }
+        }
+    }
+    &_image{
+        a{
+            cursor: pointer;
+        }
+    }
+}
+@include mq-min(lg){
+    .cards-sidebar{
+        margin-left: 0.3rem;
+        margin-bottom: 0.4rem;
+        &_image{
+            a{
+                img{
+                    width: 8.5rem;
+                }
+            }
+        }
+        &_text{
+            h3{
+                font-size: 1.2rem;
+                margin-top: -0.3rem;
             }
         }
     }
