@@ -35,3 +35,37 @@
         padding-right: 0.5rem;
     }
 }
+@include mq-min(lg){
+    .nav-banner{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        background-color: color(grayscale, white);
+        padding-right: 1.6rem;
+        h3{
+            font-size: 1.4rem;
+            padding-bottom: 1.6rem;
+        }
+        .links-banner{
+            font-size: 1.4rem;
+            padding: 0.8rem 4.2rem 0.5rem 0.8rem;
+            border: 0.1rem solid #E9ECEF;
+            margin-bottom: 0.8rem;
+            width: 18.7rem;
+            a{
+                text-transform: initial;
+                &:hover{
+                    font-weight: normal;
+                }
+            }
+            &:hover{
+                background: color(complementary, five);
+                border: none;
+                cursor: pointer;
+                a{
+                    color: color(grayscale, white);
+                }
+            }
+        }
+    }
+}

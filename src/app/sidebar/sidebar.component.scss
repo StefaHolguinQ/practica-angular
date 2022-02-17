@@ -12,12 +12,17 @@
     }
     &_products{
         h2{
-            margin-top: 0.8rem;
+            margin-top: 0.5rem;
+            font-size: 1.4rem;
         }
     }
     &_articles{
         h2{
-            margin-top: 2.4rem;
+            margin-top: 1.7rem;
+            font-size: 1.4rem;
+        }
+        .cards-sidebar{
+            margin-bottom: 0.7rem;
         }
     }
 }

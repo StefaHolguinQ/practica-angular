@@ -3,7 +3,13 @@
 @import '../../assets/scss/config/extends';
 
 .banner-container{
-    max-height: 5.3rem;
     min-width: 36rem;
     width: 100%;
+}
+@include mq-min(lg){
+    .banner-container{
+        display: flex;
+        max-width: 120rem;
+        margin: auto;
+    }
 }
