@@ -13,6 +13,8 @@ import { NavBannerComponent } from './nav-banner/nav-banner.component';
 import { NoticeBannerComponent } from './notice-banner/notice-banner.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CardsSidebarComponent } from './cards-sidebar/cards-sidebar.component';
+import { MoreReadComponent } from './more-read/more-read.component';
+import { CardsNoticesComponent } from './cards-notices/cards-notices.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,11 @@ import { CardsSidebarComponent } from './cards-sidebar/cards-sidebar.component';
     FooterComponent,
     BreadcrumbComponent,
     StickyComponent,
+    MoreReadComponent,
     NavBannerComponent,
     NoticeBannerComponent,
-    SidebarComponent
+    SidebarComponent,
+    CardsNoticesComponent
   ],
   imports: [
     BrowserModule,
