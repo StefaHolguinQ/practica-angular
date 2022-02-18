@@ -1,0 +1,23 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
+.more-read{
+    background-color: color(grayscale, gray-2);
+    padding: 2.4rem 2rem;
+    h2{
+        margin-bottom: 2.4rem;
+    }
+    app-cards-notices{
+        flex-wrap: wrap;
+    }
+}
+@include mq-min(lg){
+    .more-read{
+        margin: auto;
+        h2{
+            max-width: 120rem;
+            margin: 3.2rem auto 2rem;
+        }
+    }
+}

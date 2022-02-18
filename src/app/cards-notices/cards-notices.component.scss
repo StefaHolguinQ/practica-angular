@@ -1,0 +1,104 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
+.cards-notices{
+    max-width: 32rem;
+    &_image{
+        position: relative;
+        &_icon{
+            display: none;
+            padding: 0.3rem 1rem 0;
+            position: absolute;
+            background: color(complementary, two);
+            color: color(grayscale, white);
+            right: 0;
+            width: 3.2rem;
+            height: 3.2rem;
+            span{
+                font-size: 1.4rem;
+            }
+        }
+        &_tag{
+            padding: 0.4rem 0.9rem;
+            background: rgba(5, 17, 29, 70%);
+            color: color(grayscale, white);
+            font-size: 1.4rem;
+            margin-right: 0.3rem;
+            position: absolute;
+            left: 0;
+            bottom: 0.8rem;
+        }
+    }
+    &_text{
+        h3{
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 3rem;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 1.6rem;
+        }
+        &_paragraph{
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+            font-family: "Raleway", sans-serif;
+            margin-bottom: 1.6rem;
+            letter-spacing: -0.1px;
+        }
+        &_autor{
+            display: flex;
+            min-height: 2rem;
+            padding-bottom: 1.6rem;
+            font-size: 1.4rem;
+            p{
+                height: 100%;
+                margin-bottom: 0;
+                &:nth-child(1){
+                    color: color(complementary, one);
+                }
+                &:nth-child(2){
+                    margin: 0 0.8rem;
+                }
+                &:nth-child(3){
+                    color: color(grayscale, gray-5);
+                }
+            }
+        }
+    }
+}
+@include mq-min(sm){
+    .cards-notices{
+        margin-right: 1.6rem;
+    }
+}
+@include mq-min(md){
+    .cards-notices{
+        max-width: 28.8rem;
+        &_image{
+            &_picture{
+                img{
+                    width: -webkit-fill-available;
+                }
+            }
+            &_icon{
+                display: block;
+            }
+        }
+        &_text{
+            h3{
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+        &:nth-child(1),
+        &:nth-child(3){
+            .cards-notices_image{
+                &_icon{
+                    display: none;
+                }
+            }
+        }
+    }
+}
