@@ -15,6 +15,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { CardsSidebarComponent } from './cards-sidebar/cards-sidebar.component';
 import { MoreReadComponent } from './more-read/more-read.component';
 import { CardsNoticesComponent } from './cards-notices/cards-notices.component';
+import { PreviousEditionsComponent } from './previous-editions/previous-editions.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CardsNoticesComponent } from './cards-notices/cards-notices.component';
     NavBannerComponent,
     NoticeBannerComponent,
     SidebarComponent,
-    CardsNoticesComponent
+    CardsNoticesComponent,
+    PreviousEditionsComponent
   ],
   imports: [
     BrowserModule,
