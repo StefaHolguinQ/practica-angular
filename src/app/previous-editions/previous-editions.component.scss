@@ -3,7 +3,7 @@
 @import '../../assets/scss/config/extends';
 
 .previous-editions{
-    padding: 3.5rem 0 0 1.9rem;
+    padding: 2.7rem 0 0 2.3rem;
     h2{
         font-size: 1.4rem;
         text-transform: uppercase;
@@ -98,6 +98,8 @@
     &_link{
         display: flex;
         justify-content: center;
+        margin-left: -1.7rem;
+        margin-top: -0.2rem;
         .see-more{
             background: color(complementary, two);
             border-radius: 0.8rem;
@@ -111,8 +113,8 @@
 }
 @include mq-min(lg){
     .previous-editions{
-        padding: 6.4rem 0 0 0;
-        max-width: 120rem;
+        padding: 6.4rem 0 0 1.5rem;
+        max-width: 121rem;
         margin: auto;
         h2{
             margin-bottom: 2.1rem;

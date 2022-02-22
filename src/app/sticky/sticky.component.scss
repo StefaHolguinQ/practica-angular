@@ -3,8 +3,8 @@
 @import '../../assets/scss/config/extends';
 
 .sticky{
-    background: #002C42;
-    color: white;
+    background: color(primary, base);
+    color: color(grayscale, white);
     max-height: 6.7rem;
     min-width: 36rem;
     width: 100%;
@@ -12,22 +12,22 @@
         display: flex;
         padding: 1.5rem 1.4rem;
         .short-tag{
-            width: 35px;
-            height: 35px;
-            padding: 10px 9px;
-            font-size: 16px;
-            background: #E53212;
+            width: 3.5rem;
+            height: 3.5rem;
+            padding: 1rem 0.9rem;
+            font-size: 1.6rem;
+            background: color(primary, dark);
         }
         .info-tag{
             padding-left: 0.8rem;
             p{
                 &:first-child{
-                    font-size: 14px;
-                    line-height: 20px;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
                     margin-bottom: 0;
                 }
                 &:last-child{
-                    font-size: 12px;
+                    font-size: 1.2rem;
                     margin-bottom: 0;
                     color: rgba(255, 255, 255, 60%);
                 }
@@ -44,7 +44,7 @@
             -o-transform: rotate(45deg);
             transform: rotate(45deg);
             position: relative;
-            top: 4.7rem;
+            top: 4.5rem;
             left: 2.4rem;
         }
     }
@@ -52,5 +52,17 @@
 @include mq-min(lg){
     .sticky{
         margin-top: 1rem;
+        .container{
+            .info-tag{
+                p{
+                    &:last-child{
+                        line-height: 1rem;
+                    }
+                }
+            }
+            .short-tag{
+                padding: 0.9rem 0.9rem;
+            }
+        }
     }
 }
