@@ -46,7 +46,7 @@
                 border: none;
                 background: initial;
                 padding-right: 0.1rem;
-                padding-left: 3.7rem;
+                padding-left: 3.4rem;
                 max-height: 3.2rem;
                 .icon-icon-search{
                     &::before{
@@ -74,6 +74,7 @@
             width: 100%;
             min-height: 100%;
             left: 0;
+            z-index: 9;
             &.open{
                 display: block;
             }
@@ -95,13 +96,14 @@
 }
 @include mq-min(lg){
     .header{
-        min-height: 7rem;
+        min-height: 6.5rem;
+        margin-bottom: .6rem;
         .container{
             max-height: 100%;
-            padding: 2.3rem 0.4rem 1rem;
+            padding: 2.3rem 0.4rem 1rem 1rem;
             .buttons-right{
                 .btn-access{
-                    margin-right: 2.4rem;
+                    margin-right: 2.6rem;
                     min-width: 7.7rem;
                 }
                 .search{
@@ -119,7 +121,7 @@
                 margin-right: 13rem;
                 .main-menu{
                     margin-top: 0;
-                    padding: 0 1.5rem 0 1.5rem;
+                    padding: 0 1.5rem 0 1.7rem;
                     ul{
                         display: flex;
                         flex-direction: row;

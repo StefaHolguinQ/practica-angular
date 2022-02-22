@@ -52,7 +52,7 @@
         }
     }
     &_text{
-        padding: 2.3rem 2rem;
+        padding: 2.3rem 2.4rem;
         margin-top: -0.8rem;
         h1{
             font-weight: 600;
@@ -98,7 +98,7 @@
     .notice-banner{
         margin-top: 2.4rem;
         &_text{
-            padding: 1.7rem 0;
+            padding: 1.6rem 0;
             h1{
                 font-size: 3.2rem;
                 line-height: 3.6rem;
@@ -109,6 +109,7 @@
                 font-weight: 400;
             }
             .name-autor{
+                padding-bottom: 1.4rem;
                 p{
                     &:nth-child(2){
                         margin: 0 0.2rem;

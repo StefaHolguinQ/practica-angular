@@ -3,7 +3,7 @@
 @import '../../assets/scss/config/extends';
 
 .sidebar{
-    padding: 1.6rem 2rem;
+    padding: 1.6rem 2rem 1.2rem 2.4rem;
     &_products,
     &_articles{
         h2{
@@ -28,12 +28,17 @@
 }
 @include mq-min(lg){
     .sidebar{
-        padding: 2.1rem 0 2.1rem 1.5rem;
+        padding: 2.1rem 0 0 1.5rem;
         &_articles{
             margin: 3.7rem 0rem 1.7rem 0.1rem;
             h2{
                 margin-top: 4.1rem;
                 margin-bottom: 1.7rem;
+            }
+        }
+        &_products{
+            h2{
+                margin-top: 0.4rem;
             }
         }
     }
