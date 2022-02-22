@@ -1,16 +1,20 @@
 <div class="previous-editions">
     <h2>Ediciones anteriores</h2>
-    <div class="previous-editions_cards" *ngFor="let item of datosEditions">
-        <div class="previous-editions_cards_images">
-            <a href="#"><img src="{{item.image}}" title="Transformación" alt="Transformación digital" width="288" height="419"></a>
-            <img src="../../../../assets/images/logos/LogoRI-White.png" title="Logo Reportero Indstrial" alt="Logo Reportero Industrial blanco" class="logo-white" width="129" height="20">
-        </div>
-        <div class="previous-editions_cards_text">
-            <p class="text1">{{item.text1}}</p>
-            <p class="text2">{{item.text2}}</p>
-            <p class="text3">{{item.text3}}</p>
-            <p class="text4">{{item.text4}}</p>
+    <div class="previous-editions_container">
+        <div class="previous-editions_container_cards" *ngFor="let item of datosEditions">
+            <div class="images">
+                <a href="#" class="image-edition"><img src="{{item.image}}" title="Transformación" alt="Transformación digital" width="288" height="419"></a>
+                <img src="../../../../assets/images/logos/LogoRI-White.png" title="Logo Reportero Indstrial" alt="Logo Reportero Industrial blanco" class="logo-white" width="129" height="20">
+            </div>
+            <div class="text">
+                <p class="text1">{{item.text1}}</p>
+                <p class="text2">{{item.text2}}</p>
+                <p class="text3">{{item.text3}}</p>
+                <p class="text4">{{item.text4}}</p>
+            </div>
         </div>
     </div>
-    <a href="#" class="see-more">Ver más ediciones</a>
+    <div class="previous-editions_link">
+        <a href="#" class="see-more">Ver más ediciones</a>
+    </div>
 </div>

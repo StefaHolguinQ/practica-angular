@@ -1,0 +1,124 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
+.previous-editions{
+    padding: 3.5rem 0 0 1.9rem;
+    h2{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-bottom: 2.4rem;
+    }
+    &_container{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        &::-webkit-scrollbar {
+            width: 0 !important
+        }
+        &_cards{
+            position: relative;
+            max-width: 28.8rem;
+            margin-right: 1.5rem;
+            scroll-snap-align: start;
+            .images{
+                .logo-white{
+                    position: absolute;
+                    bottom: 2rem;
+                    left: 1rem;
+                }
+                .image-edition{
+                    cursor: pointer;
+                    &::before{
+                        content: "";
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        top: 0;
+                        position: absolute;
+                        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.405) 65.62%, rgba(0, 0, 0, 0.8) 100%);
+                        width: 28.8rem;
+                        height: 41.9rem;
+                    }
+                }
+            }
+            .text{
+                position: absolute;
+                bottom: 8.5rem;
+                left: 5rem;
+                line-height: 3rem;
+                color: color(grayscale, white);
+                font-family: $font-secondary;
+                text-transform: uppercase;
+                text-align: center;
+                p{
+                    margin-bottom: 0;
+                    &.text1,
+                    &.text4{
+                        font-weight: 300;
+                        font-size: 1.4rem;
+                    }
+                    &.text2{
+                        font-weight: 600;
+                        font-size: 2.2rem;
+                    }
+                    &.text3{
+                        font-weight: bold;
+                        font-size: 4.2rem;
+                    }
+                }
+            }
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4){
+                .text{
+                    bottom: 11.5rem;
+                }
+            }
+            &:nth-child(2){
+                .text{
+                    left: 3rem;
+                }
+            }
+            &:nth-child(3){
+                .text{
+                    left: 4rem;
+                    .text3{
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+            &:nth-child(4){
+                .text{
+                    left: 4rem;
+                }
+            }
+        }
+    }
+    &_link{
+        display: flex;
+        justify-content: center;
+        .see-more{
+            background: color(complementary, two);
+            border-radius: 0.8rem;
+            color: color(grayscale, white);
+            cursor: pointer;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            padding: 0.7rem 3.5rem;
+        }
+    }
+}
+@include mq-min(lg){
+    .previous-editions{
+        padding: 6.4rem 0 0 0;
+        max-width: 120rem;
+        margin: auto;
+        h2{
+            margin-bottom: 2.1rem;
+        }
+        &_link{
+            padding: 4rem 0 4rem 0;
+        }
+    }
+}
