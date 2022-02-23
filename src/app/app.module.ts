@@ -16,6 +16,7 @@ import { CardsSidebarComponent } from './cards-sidebar/cards-sidebar.component';
 import { MoreReadComponent } from './more-read/more-read.component';
 import { CardsNoticesComponent } from './cards-notices/cards-notices.component';
 import { PreviousEditionsComponent } from './previous-editions/previous-editions.component';
+import { StickyEditionComponent } from './sticky-edition/sticky-edition.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PreviousEditionsComponent } from './previous-editions/previous-editions
     NoticeBannerComponent,
     SidebarComponent,
     CardsNoticesComponent,
-    PreviousEditionsComponent
+    PreviousEditionsComponent,
+    StickyEditionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,49 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
+.sticky-edition{
+    background: color(grayscale, gray-2);
+    margin-top: 4.8rem;
+    &_container{
+        flex-direction: column;
+        padding: 2rem 2.1rem 2rem 2.3rem;
+        margin-top: 4.8rem;
+        max-width: 120rem;
+        margin: auto;
+        h2{
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 2.9rem;
+            text-transform: uppercase;
+            margin-bottom: 2.4rem;
+        }
+        &_link{
+            color: color(primary, base);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            text-transform: uppercase;
+        }
+    }
+}
+@include mq-min(md){
+    .sticky-edition{
+        margin-top: 0;
+        &_container{
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 1.7rem;
+            padding-right: 0;
+            padding-bottom: 1.4rem;
+            h2{
+                margin-bottom: 0;
+            }
+            &_link{
+                padding-top: 0.5rem;
+                margin-right: -1rem;
+            }
+        }
+    }
+}
