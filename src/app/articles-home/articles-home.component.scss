@@ -13,3 +13,10 @@
         }
     }
 }
+@include mq-min(lg){
+    .articles-home{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+    }
+}
