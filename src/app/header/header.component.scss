@@ -8,10 +8,8 @@
     max-width: 144rem;
     min-width: 33rem;
     margin: auto;
-    padding: 0 1.7rem;
     .container{
         padding: 1.5rem 0rem;
-        max-width: 120rem !important;
         width: 100%;
         .btn{
             &.btn-primary{
@@ -124,15 +122,16 @@
                 order: initial;
                 position: initial;
                 width: initial;
-                margin-right: 7rem;
+                margin-right: 7.6rem;
                 .main-menu{
                     margin-top: 0;
                     flex-direction: initial;
+                    max-width: 38.3rem;
                     a{
-                        margin-top: 0;
-                        margin: 0 1.5rem 0 1.7rem;
+                        margin: 0 3.7rem 0 0;
+                        padding: 1rem 0 2.95rem;
                         &:hover{
-                            padding-bottom: 2.87rem;
+                            padding-bottom: 2.95rem;
                         }
                     }
                 }
