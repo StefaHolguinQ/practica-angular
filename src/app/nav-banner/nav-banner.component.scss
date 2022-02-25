@@ -18,13 +18,13 @@
         width: 0 !important
     }
     .links-banner{
-        min-width: fit-content;
-        font-size: 1rem;
-        padding: 0 0.5rem;
         a{
             color: color(complementary, five);
             text-transform: uppercase;
             font-weight: normal;
+            min-width: fit-content;
+            font-size: 1rem;
+            padding: 0 0.5rem;
             &:hover{
                 font-weight: 600;
             }
@@ -33,6 +33,7 @@
     h3{
         font-size: map-get($sizes, "tiny");
         padding-right: 0.5rem;
+        padding-top: 0.4rem;
     }
 }
 @include mq-min(lg){
@@ -45,26 +46,26 @@
         h3{
             font-size: 1.4rem;
             padding-bottom: 1.4rem;
+            padding-top: 0;
         }
         .links-banner{
-            font-size: 1.4rem;
-            padding: 0.8rem 4.2rem 0.5rem 0.8rem;
-            border: 0.1rem solid #E9ECEF;
-            margin-bottom: 0.8rem;
-            margin-top: 0;
-            width: 18.7rem;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
             a{
+                font-size: 1.4rem;
+                padding: 0.8rem 4.2rem 0.5rem 0.8rem;
+                border: 0.1rem solid #E9ECEF;
+                margin-bottom: 0.8rem;
+                margin-top: 0;
+                width: 18.7rem;
                 text-transform: initial;
                 &:hover{
                     font-weight: normal;
-                }
-            }
-            &:hover{
-                background: color(complementary, five);
-                border: none;
-                cursor: pointer;
-                a{
                     color: color(grayscale, white);
+                    background: color(complementary, five);
+                    border: transparent;
+                    cursor: pointer;
                 }
             }
         }

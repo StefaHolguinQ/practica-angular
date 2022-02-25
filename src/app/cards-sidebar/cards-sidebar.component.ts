@@ -21,6 +21,13 @@ export class CardsSidebarComponent implements OnInit {
       'text1':'Alaín Castillo',
       'text2':'.',
       'text3':'Nov 28, 2021',
+    },
+    {
+      'imageCard':'../../../../assets/images/banners/persona.png',
+      'title':'Perspectivas para la industria plástica en la era post-covid',
+      'text1':'Alaín Castillo',
+      'text2':'.',
+      'text3':'Nov 28, 2021',
     }
   ]
 

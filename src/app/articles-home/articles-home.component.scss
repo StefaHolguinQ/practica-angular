@@ -1,0 +1,15 @@
+@import '../../assets/scss/config/variables';
+@import '../../assets/scss/config/mixins';
+@import '../../assets/scss/config/extends';
+
+.articles-home{
+    padding: 4rem 2rem;
+    &_left,
+    &_center{
+        h2{
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            margin-bottom: 2.4rem;
+        }
+    }
+}

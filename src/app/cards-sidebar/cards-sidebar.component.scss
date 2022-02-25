@@ -41,6 +41,9 @@
             cursor: pointer;
         }
     }
+    &:nth-child(3){
+        display: none;
+    }
 }
 @include mq-min(lg){
     .cards-sidebar{

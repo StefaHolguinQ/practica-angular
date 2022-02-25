@@ -9,8 +9,8 @@
             <img srcset="../../../../assets/images/logos/Logo RI.png" alt="Default logo">
         </picture>
         <div class="container-menu d-flex" [ngClass]="openMenu ? 'open' : ''">
-            <nav class="main-menu" *ngFor="let item of datosMenu">
-                <a href="{{item.url}}" class="button text-link">{{item.titulo}}</a>
+            <nav class="main-menu">
+                <a *ngFor="let item of datosMenu" href="{{item.url}}" class="button text-link">{{item.titulo}}</a>
             </nav>
         </div>
         <div class="buttons-right">
